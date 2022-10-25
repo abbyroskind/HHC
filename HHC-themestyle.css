@@ -1,0 +1,204 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--primary-font: 'Roboto', sans-serif; 
+	--secondary-font: 'Montserrat', sans-serif;
+	--light-teal: #A0E3CE;
+	--old-gold: #F7DE94;
+	--gradient: linear-gradient(143.47deg, #F7DE94 0.27%, #A0E3CE 92.4%);
+	--maroon: #6F141C;
+	--peach:#FAECDF;
+	--red: #F04600;
+	--orange:#F5971B;
+	--light-grey:#BBBBBB;
+	--dark-grey: #555;
+	--forest: #5E5842;
+}
+
+body.color-light_teal {background:var(--light-teal);}
+body.color-old_gold {background:var(--old-gold);}
+body.color-gradient {background:var(--gradient);}
+
+/* Logo */
+
+header.theme-header {
+	display: none;
+}
+
+header.theme-header.white-logo {
+	display: none;
+}
+
+main.theme-content section.article-content section.logo-container {
+	align-items: center;
+	background: #FFF;
+	display: flex;
+	height: 110px;
+	justify-content: center;
+}
+
+main.theme-content section.article-content section.logo-container img {
+	width: 200px;
+}
+
+/* Top of Form */
+
+section.at-inner header.at-title {
+	color: var(--maroon);
+}
+
+/* Multi-Step */
+
+section.at-inner ol.at-steps li.at-step.active {
+	border-bottom-color: var(--red);
+}
+
+section.at-inner ol.at-steps li.at-step.valid > ::before {
+	background: #555;
+}
+
+
+
+/* Contribution Buttons */
+
+article .at.ngp-form fieldset.ContributionInformation label.label-amount {
+	background: var(--forest);
+}
+
+fieldset.ContributionInformation label.label-amount a:hover,
+fieldset.ContributionInformation label.label-amount:hover a {
+	  background: var(--red);
+}
+
+fieldset.ContributionInformation label.label-amount a {
+	background: var(--forest);
+}
+
+fieldset.ContributionInformation label.label-amount input:checked + a {
+	  background-color: var(--red) !important;
+	  color:#FFF;
+}
+
+fieldset.ContributionInformation input.edit-otheramount,
+fieldset.ContributionInformation input.edit-otheramount:required::selection {
+	color: var(--forest);
+}
+
+fieldset.ContributionInformation input.edit-otheramount::placeholder {
+	color: var(--forest);
+}
+
+fieldset.ContributionInformation input:checked + input.edit-otheramount {
+	border-color:var(--forest);
+	color:var(--forest) !important;
+}
+
+fieldset.ContributionInformation input:checked + input.edit-otheramount::placeholder {color:var(--forest) !important;}
+
+fieldset.ContributionInformation label.label-otheramount span.label-otheramount-prefix {
+	color: var(--forest) !important;
+}
+
+fieldset.ContributionInformation input.edit-otheramount:required + span {
+	color: var(--forest) !important;
+}
+
+/* Checkboxes */
+
+article .at.ngp-form label.at-check .at-checkbox-title-container:before,
+article .at.ngp-form label.at-check .at-checkbox-title-container:after,
+article .at.ngp-form .UpdateMyProfile label > span:before,
+article .at.ngp-form .UpdateMyProfile label > span:after,
+article .at.ngp-form label.at-check.authorize-payment-label > span:before,
+article .at.ngp-form label.at-check.authorize-payment-label > span:after {
+	border: 1px solid var(--dark-grey);
+}
+
+article .at.ngp-form label.at-check .at-checkbox-title-container:after,
+article .at.ngp-form .UpdateMyProfile label > span:after,
+article .at.ngp-form label.at-check.authorize-payment-label > span:after {
+	background-color: var(--red) !important;
+	border: 1px solid var(--dark-grey);
+}
+
+/* Submit */
+
+.at-submit.btn-at.btn-at-primary,
+.nextStep.btn-at.btn-at-primary,
+.submitStep.btn-at.btn-at-primary {
+	background: var(--red);
+}
+
+.at-submit.btn-at.btn-at-primary:hover,
+.nextStep.btn-at.btn-at-primary:hover,
+.submitStep.btn-at.btn-at-primary:hover {
+	background: var(--red) !important;
+}
+
+.prevStep.btn-at.btn-at-link {
+	background: var(--light-grey);
+}
+
+.prevStep.btn-at.btn-at-link:hover {
+	background: var(--light-grey);
+}
+
+/* Footer */
+
+footer.theme-footer {
+	background: var(--maroon);
+}
+
+footer.theme-footer .footer-wrapper p {
+	color: #FFF;
+	font-family: var(--primary-font);
+	font-weight: 400;
+}
+
+footer.theme-footer .nonprofit {
+	border-bottom: 1px solid #FFF;
+	max-width: 760px;
+	margin: 0 40px 8px;
+}
+
+footer.theme-footer .nonprofit p {
+	padding-bottom: 15px;
+}
+
+footer.theme-footer a {
+	color: #FFF;
+}
+
+footer.theme-footer .social-media {
+	padding-top:
+}
+
+footer.theme-footer .social-media a {
+	text-decoration: none;
+}
+
+footer.theme-footer .privacy,
+footer.theme-footer .copyright {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+@media (min-width: 768px) {
+	
+	footer.theme-footer .nonprofit {
+		margin: 0 auto 8px;
+	}
+	
+}
+
+
+
+
+
+
+
+

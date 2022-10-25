@@ -1,0 +1,736 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--primary-font: 'Roboto', sans-serif; 
+	--secondary-font: 'Montserrat', sans-serif;
+}
+
+main.theme-content .ngp-form {max-width: unset;}
+
+.ngp-form section.at-inner p,
+.ngp-form section.at-inner li {
+	padding-bottom: 10px;
+}
+
+/* Header */
+
+header.theme-header {
+	background: #FFF;
+}
+
+header.theme-header figure.branding {
+	align-items: center;
+	display: flex;
+	height: 110px;
+	justify-content: center;
+}
+
+header.theme-header figure.branding img {
+	width: 200px;
+}
+
+/* Image */
+
+body.image-none section.article-content section.inline-image {
+	display: none;
+}
+
+section.article-content section.inline-image {
+	background: #FFF;
+}
+
+section.article-content section.inline-image img {
+	object-fit: cover;
+	height: 240px;
+	width: 100%;
+}
+
+/* Top of Form */
+
+section.at-inner header.at-title {
+	font-family: var(--secondary-font);
+	font-size: 28px;
+	font-weight: 900;
+	line-height: 32px;
+	padding: 24px 20px 4px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+section.at-inner header.at-markup.HeaderHtml {
+	font-family: var(--primary-font);
+	font-size: 16px;
+	font-weight: 400;
+	padding: 0 20px 16px;
+} 
+
+section.at-inner header.at-markup.HeaderHtml p {
+	padding-top: 0;
+}
+
+section.at-inner header.at-markup.HeaderHtml ul,
+section.at-inner header.at-markup.HeaderHtml ol {
+	padding-left: 25px;
+}
+
+/* FastAction */
+
+section.at-inner .at-markup.FastAction {
+	background: #F1F3F5;
+	padding: 20px;
+}
+
+section.at-inner .fastAction {
+	background: #F1F3F5;
+	padding: 0;
+}
+
+/* Multi-Step */
+
+section.at-inner ol.at-steps {
+	background: #FFF;
+}
+
+section.at-inner ol.at-steps span,
+section.at-inner ol.at-steps li.at-step > ::before {
+	font-family: var(--primary-font);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.at-form-submit .prevNext.prev {
+	float: left;
+}
+
+/* Radio Buttons */
+
+fieldset.ContributionInformation .at-radios {
+  display:flex;
+  flex-wrap:wrap;
+  margin:0;
+}
+
+label.label-amount input[type="radio"]:checked+a {
+  background-color: var(--red);
+  border-color: #555;
+}
+
+article .at.ngp-form .radios label input[type="radio"] {
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  border:1px solid var(--dark-grey);
+  border-radius:50% !important;
+  content:"";
+  display:block;
+  height:24px;
+  left:0;
+  margin:0;
+  padding:0;
+  outline:none;
+  position:absolute;
+  width:24px;
+  cursor: pointer;
+}
+
+article .at.ngp-form .radios label input[type="radio"]:checked {
+  background:var(--red);
+  border:0;
+}
+
+article .at.ngp-form .form-item-selectedfrequency .radios {
+  display:flex;
+  flex-wrap:wrap;
+  margin:0;
+}
+
+article .at.ngp-form.multistep-layout .form-item-selectedfrequency .radios {margin:10px 0 0;}
+
+article .at.ngp-form .form-item-selectedfrequency .radios label {
+  color: var(--black);
+  display:block;
+  font-family: var(--secondary-font);
+  font-size:15px;
+  font-weight: 500;
+  line-height:21px;
+  height:30px;
+  margin:0 0 10px 10px;
+  padding:5px 10px 5px 34px;
+  position:relative;
+  text-decoration:none;
+}
+
+article .at.ngp-form .form-item-selectedfrequency .radio-description {
+  color: var(--orange);
+  display:block;
+  font-family: var(--main-font);
+  font-size:15px;
+  font-weight: 500;
+  line-height:21px;
+  margin:0 10px 10px;
+  padding:0;
+  width:100%;
+}
+
+article .at.ngp-form .form-item-selectedfrequency .radio-description-value-0 {
+  background-image: url(https://nvlupin.blob.core.windows.net/images/van/EADEM/EADEM/1/59069/images/themes/network_lobby/orange_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 30px 35px;
+  padding: 20px 0 5px 35px;
+}
+
+.at input[type="text"], 
+.vgs-input-container iframe {
+  border-radius: 0 !important;
+  border: 1px solid var(--grey);
+  color: var(--black);
+}
+
+input[type="text"]:focus {
+  border-color: var(--black) !important;
+}
+
+.at-select.StateProvince select {
+  color: var(--black) !important;
+  border-radius: 0;
+}
+
+input {
+	border-radius: 0 !important;
+}
+
+/* Contribution Buttons */
+
+article .at.ngp-form fieldset.ContributionInformation .at-radio {margin:0 -10px;}
+
+article .at.ngp-form fieldset.ContributionInformation .at-radios {
+  display:flex;
+  flex-wrap:wrap;
+  margin:0 10px 5px;
+}
+
+article .at.ngp-form fieldset.ContributionInformation label.label-amount {
+  border-radius:0;
+  color: #FFF;
+  font-size: 20px;
+  font-weight:900;
+  float:none;
+  height:46px;
+  letter-spacing:unset;
+  line-height:22px;
+  margin:10px;
+  padding: 12px 48px;;
+  text-shadow:unset;
+  width:calc(50% - 20px) !important;
+}
+
+fieldset.ContributionInformation .form-item-selectamount {
+	margin:0;
+}
+
+.at-fields .label-amount {
+	font-family: var(--secondary-font);
+	font-weight: 700;
+	font-size: 18px;
+}
+
+fieldset.ContributionInformation label.label-amount input[name="SelectAmount"] {
+	  height:0 !important;
+	  left:0;
+	  position:absolute;
+	  top:0;
+	  width:1px !important;
+	  font-family: var(--primary-font);
+}
+
+fieldset.ContributionInformation label.label-amount a {
+	 font-family: var(--primary-font) !important;
+	 border:0;
+	 border-radius:0;
+	 height:46px;
+}
+
+label.label-amount.long {
+	font-size: 18px !important;
+}
+
+fieldset.ContributionInformation label.label-amount:active a {box-shadow:none;}
+
+article .at.ngp-form fieldset.ContributionInformation label.label-amount.label-otheramount {
+	  background:transparent;
+	  font-size:0;
+	  height:auto;
+	  line-height:50px;
+	  margin-bottom:10px;
+	  padding:0;
+	  position:relative;
+}
+
+fieldset.ContributionInformation .at-radios.recurring-options label.label-otheramount:after {
+	   content:"";
+	   font-size:0;
+}
+
+fieldset.ContributionInformation input.edit-otheramount,
+fieldset.ContributionInformation input.edit-otheramount:required::selection {
+	background:none;
+	border-radius:0;
+	font-family:var(--primary-font) !important;
+	font-size: 20px;
+	font-weight:900;
+	height:46px !important;
+	letter-spacing:unset;
+	line-height:22px;
+	margin:0;
+	padding:0 20px 0 25px;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+
+fieldset.ContributionInformation input.edit-otheramount::placeholder {
+	font-family: var(--primary-font) !important;
+	font-size: 20px !important;
+	font-weight: 900;
+	line-height: 22px;
+}
+
+fieldset.ContributionInformation input:checked + input.edit-otheramount {
+	background: none;
+	font-size: 21px;
+	font-family: var(--main-font) !important;
+	font-weight: 700;
+	height: 60px;
+	padding:0 20px 0 25px;
+}
+
+fieldset.ContributionInformation input:checked + input.edit-otheramount::placeholder {color:var(--grey) !important;}
+
+fieldset.ContributionInformation label.label-otheramount span,
+fieldset.ContributionInformation input.edit-otheramount:required + span {
+	border:0;
+	font-family: var(--primary-font) !important;
+	display:block;
+	font-size:20px !important;
+	font-weight: 900;
+	height:50px;
+	line-height:22px;
+	padding:0 0 0 13px;
+}
+
+fieldset.ContributionInformation input.edit-otheramount:required + span {
+	display: flex;
+	font-weight:900;
+	font-size: 20px !important;
+	font-family: var(--primary-font) !important;
+}
+
+fieldset.ContributionInformation label.label-otheramount span.label-otheramount-prefix {
+	height: 100%;
+}
+
+.at-form-submit {padding:10px 20px 0;}
+
+.at-form-submit {padding:10px 20px;}
+
+/* Checkbox(es) */
+
+label.at-check {margin: 5px 5px 5px 10px;}
+
+.at-check.YesSignMeUpForUpdatesForBinder {position: relative;}
+
+fieldset.at-fieldset.ContactInformation .at-markup.UpdateMyProfile {
+	margin: 0 10px 20px;
+}
+
+/* .at-markup.UpdateMyProfile {margin: 0 5px;} */
+.PaymentInformation .at-markup.UpdateMyProfile {margin: 5px 10px;}
+.updateMyProfileSection > label {margin: 0;}
+
+article .at.ngp-form label.at-check .at-checkbox-title-container:before,
+article .at.ngp-form label.at-check .at-checkbox-title-container:after,
+article .at.ngp-form .UpdateMyProfile label > span:before,
+article .at.ngp-form .UpdateMyProfile label > span:after,
+article .at.ngp-form label.at-check.authorize-payment-label > span:before,
+article .at.ngp-form label.at-check.authorize-payment-label > span:after {
+	  border-radius: 1px;
+	  height: 24px;
+	  left: 0;
+	  top: 0;
+	  width: 24px;
+}
+
+article .at.ngp-form label.at-check .at-checkbox-title-container:before,
+article .at.ngp-form .UpdateMyProfile label > span:before,
+article .at.ngp-form label.at-check.authorize-payment-label > span:before {background: none;}
+
+article .at.ngp-form label.at-check .at-checkbox-title-container:after,
+article .at.ngp-form .UpdateMyProfile label > span:after,
+article .at.ngp-form label.at-check.authorize-payment-label > span:after {
+	background-image: url(https://nvlupin.blob.core.windows.net/images/van/EA/EA002/1/71576/images/check-mark.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	content: "";
+	font-size: 24px;
+	line-height: 24px;
+	text-align: center;
+}
+
+article .at.ngp-form label.at-check .at-checkbox-title-container,
+article .at.ngp-form .UpdateMyProfile label > span,
+article .at.ngp-form fieldset.ContributionInformation label.at-select.SelectedFrequency span.at-select,
+article .at.ngp-form label.at-check.authorize-payment-label > span {
+	display: block;
+	font-family: var(--primary-font);
+	font-size: 15px;
+	font-weight: 400;
+	color: #000;;
+	line-height: 20px;
+	margin: 0;
+	margin-top: 15px;
+	padding-left: 34px;
+	text-transform: none;
+}
+
+article .at.ngp-form fieldset.ContributionInformation label.at-select.SelectedFrequency span.at-select.SelectedFrequency.select-collapse {
+	font-weight: 700;
+}
+
+fieldset.ContributionInformation label.at-select.SelectedFrequency span.at-select {padding-left: 0;}
+
+article .at.ngp-form label.at-check .at-checkbox-title,
+article .at.ngp-form label.at-check .at-cover-costs-info,
+article .at.ngp-form label.at-select .select-collapse,
+article .at.ngp-form .UpdateMyProfile label > span {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+/* Submit */
+
+section.at-inner .at-form-submit {
+	margin-top: 52px;
+}
+
+.at-submit.btn-at.btn-at-primary.at-secondary-submit {
+	margin: 30px 0;
+	text-transform: capitalize;
+}
+
+.at-form-submit.clearfix {
+	display: block;
+	padding: 0 20px;
+}
+
+.at-form-submit .step-prevNext .prevNext.next {
+	float: unset;
+	margin-left: 0;
+}
+
+.at-form-submit .prevNext.prev {
+	float: unset; 
+}
+
+.at-submit.btn-at.btn-at-primary,
+.nextStep.btn-at.btn-at-primary,
+.prevStep.btn-at.btn-at-link,
+.submitStep.btn-at.btn-at-primary {
+	border-radius: 0px;
+	color: #FFF;
+	float: unset;
+	font-family: var(--secondary-font);
+	font-size: 20px;
+	font-weight: 800;
+	height: 46px;
+	line-height: 22px;
+	margin: 0 auto 20px;
+	/* padding: 12px 32px; */
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.prevStep.btn-at.btn-at-link:hover {
+	color: #FFF;
+}
+
+.back-link.at-submit.btn-at.btn-at-link {
+	border-radius: 0px;
+	color: #FFF;
+	float: none;
+	font-family: var(--secondary-font);
+	font-size: 20px;
+	font-weight: 800;
+	height: 46px;
+	line-height: 22px;
+	margin: 0 auto 20px;
+	padding: 12px 32px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.multistep-layout .at-form-submit .step-prevNext {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.at-markup.UpdateMyProfile span {
+	font-family: var(--primary-font);
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 21px;
+}
+
+/* Inputs and Labels */
+
+main.theme-content section.at-inner legend.at-legend {
+	color: #000;
+	font-family: var(--secondary-font);
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 22px;
+}
+
+main.theme-content section.at-inner .at-fields,
+main.theme-content section.at-inner .at-fields label {
+	color: #000;
+	font-family: var(--primary-font);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+main.theme-content section.at-inner .at-fields .at-area.Message0 {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+main.theme-content section.at-inner .at-fields textarea {
+	color: var(--black);
+	background: #F1F1F1;
+	border-color: var(--grey);
+	border-radius: 0;
+	font-family: var(--main-font);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+section.at-inner .at-fieldset.ContactInformation .at-fields select {
+	border-color: var(--grey);
+}
+
+section.at-inner .at-fieldset.ContactInformation .at-fields label small {
+	color: #000;
+}
+
+section.at-inner .at-fieldset.ContactInformation .at-fields input {
+	color: #000;
+	font-family: var(--primary-font);
+	font-size: 15px;
+	line-height: 21px;
+}
+
+section.at-inner .at-fieldset.ContactInformation .at-fields input:last-child,
+section.at-inner .at-fieldset.PaymentInformation .at-fields input:last-child,
+section.at-inner .at-fieldset.PaymentInformation .at-fields .vgs-input-container iframe:last-child {
+  border-color: var(--grey);
+  margin: 0 0 16px 0;
+}
+
+section.at-inner .at-fieldset.PaymentInformation .at-row {
+	flex-wrap: unset;
+	flex-flow: unset;
+}
+
+section.at-inner .at-fieldset.PaymentInformation .at-row .at-cc-number {
+	flex-basis: 50%;
+}
+
+section.at-inner .at-check.SmsSubscribeMobilePhone {
+	margin-bottom: 30px;
+}
+
+section.at-inner .at-row.SmsLegalDisclaimer.at-indented {
+	padding-left: 35px;
+}
+
+/* Footer */
+
+footer.theme-footer {
+	text-align: center;
+}
+
+footer.theme-footer .footer-wrapper {
+	padding: 40px 0;
+}
+
+footer.theme-footer p {
+	font-family: var(--primary-font);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0 auto;
+}
+
+footer.theme-footer .attribution {
+	color: #FFF;
+	font-family: var(--primary-font);
+	font-size: 16px;
+	line-height: 24px;
+	padding: 40px 0 0;
+}
+
+footer.theme-footer figure.branding,
+footer.theme-footer .social-media,
+footer.theme-footer .copyright {
+	padding: 0 0 8px;
+}
+
+footer.theme-footer figure.branding img {
+	width: 200px;
+}
+
+footer.theme-footer .social-media {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+footer.theme-footer .social-media a {
+  align-items: center;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  text-align: center;
+  width: 24px;
+}
+
+footer.theme-footer .social-media span {
+  align-items: center;
+  border: 1px solid #FFF;
+  border-radius: 100%;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+footer.theme-footer .privacy {
+	font-family: var(--primary-font);
+}
+
+footer.at-markup.FooterHtml.has-content {
+	display: block;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+}
+
+footer.at-markup.FooterHtml {
+	display: none;
+}
+
+/* Thank You */
+
+.content.thankYou {
+	background: #FFF;
+	padding: 40px;
+}
+
+@media (min-width: 500px) {
+	
+	/* Image */
+	
+	section.article-content section.inline-image img {
+		height: 280px;
+	}
+	
+	/* Submit */
+	
+	.at-form-submit .step-prevNext .prevNext.next {
+		float: right;
+		margin-left: 20px;
+	}
+	
+	.at-form-submit .prevNext.prev {
+		float: left;
+	}
+
+}
+
+@media (min-width: 768px) {
+	
+	/* Background Image */
+	
+	body.image-background main.theme-content section.background-image {
+		display: block;
+	}
+	  
+	body.image-background main > section.background-image {
+		background-attachment: scroll;
+		background-position: 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 100%;
+		position: fixed;
+		width: 100%;
+		z-index: -999;
+	}
+	  
+	body.image-background section.inline-image {
+		display: none;
+	}
+	
+	/* Form */
+	
+	main.theme-content .form-container {
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+	
+	main.theme-content section.article-content {
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		margin: 80px 40px;
+	}
+	
+	main.theme-content section.article-content:not(.two-columns) {
+		width: 625px;
+	}
+	
+	main.theme-content article {
+		display: flex;
+	}
+	
+	body.alignment-left main.theme-content article {
+		justify-content: left;
+	}
+	
+	body.alignment-center main.theme-content article {
+		justify-content: center;
+	}
+	
+	body.alignment-center main.theme-content article section.article-content {
+		width: 840px;
+	}
+	
+	body.alignment-right main.theme-content article {
+		justify-content: right;
+	}
+
+	
+}
+
+
+
+
+
+
