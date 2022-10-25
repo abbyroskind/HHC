@@ -149,7 +149,7 @@ article .at.ngp-form label.at-check.authorize-payment-label > span:after {
 
 /* Footer */
 
-footer.theme-footer {
+/* footer.theme-footer {
 	background: var(--maroon);
 }
 
@@ -185,7 +185,7 @@ footer.theme-footer .privacy,
 footer.theme-footer .copyright {
 	font-size: 14px;
 	line-height: 20px;
-}
+} */
 
 @media (min-width: 768px) {
 	

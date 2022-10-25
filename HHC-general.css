@@ -565,7 +565,7 @@ section.at-inner .at-row.SmsLegalDisclaimer.at-indented {
 
 /* Footer */
 
-footer.theme-footer {
+/* footer.theme-footer {
 	text-align: center;
 }
 
@@ -637,7 +637,9 @@ footer.at-markup.FooterHtml.has-content {
 
 footer.at-markup.FooterHtml {
 	display: none;
-}
+} */
+
+
 
 /* Thank You */
 
